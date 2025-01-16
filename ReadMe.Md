@@ -9,6 +9,7 @@
 ## Installation files ##
 * Dockerfile
 * Deployment file
+* MSSQL JDBC driver jar
 
 ## Verification ##
 Access the keycloak on http://localhost:8080/auth
