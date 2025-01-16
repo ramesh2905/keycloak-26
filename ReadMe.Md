@@ -8,13 +8,13 @@
 
 ## Installation files ##
 * Dockerfile
-  Build the custom keycloak image using the quay.io/keycloak/keycloak:26.0.6 </br>
-  Set the environmental variables needed </br>
-  Copy the MSSQL server JDBC driver to the providers directory </br>
-  Run the build step in the image to optimize the image </br>
-  Build the docker image using the command `docker build . -t customkeycloakimage:26.0.6` </br>
+  + Build the custom keycloak image using the quay.io/keycloak/keycloak:26.0.6 </br>
+  + Set the environmental variables needed </br>
+  + Copy the MSSQL server JDBC driver to the providers directory </br>
+  + Run the build step in the image to optimize the image </br>
+  + Build the docker image using the command `docker build . -t customkeycloakimage:26.0.6` </br>
   
-* Deployment file
+* Manifest.yaml file
   Create the manifest.yaml with the deployment, service, ingress for the keycloak </br>
   Set the bootstrap admin credentials </br>
   Update the database connection settings </br>
