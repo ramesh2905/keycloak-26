@@ -28,7 +28,7 @@ spec:
             memory: "500Mi"
         env:
         - name: KC_BOOTSTRAP_ADMIN_USERNAME
-          value: "jbhadmin"
+          value: "keycloak"
         - name: KC_BOOTSTRAP_ADMIN_PASSWORD
           value: "changeme"
         - name: KC_LOG_LEVEL
