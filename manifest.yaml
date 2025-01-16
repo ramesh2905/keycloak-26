@@ -16,8 +16,8 @@ spec:
         app: keycloak
     spec:
       containers:
-      - name: mykeycloak01
-        image: mykeycloak01:26.0.6
+      - name: customkeycloakimage
+        image: customkeycloakimage:26.0.6
         args: ["start","--optimized"]
         resources:
           limits:
