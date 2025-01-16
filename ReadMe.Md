@@ -6,20 +6,20 @@
 * Docker 
 * Kubectl 
 
-## Installation files ##
+## Installation ##
 * Dockerfile
-  + Build the custom keycloak image using the quay.io/keycloak/keycloak:26.0.6 </br>
-  + Set the environmental variables needed </br>
-  + Copy the MSSQL server JDBC driver to the providers directory </br>
-  + Run the build step in the image to optimize the image </br>
-  + Build the docker image using the command `docker build . -t customkeycloakimage:26.0.6` </br>
+  + Build the custom keycloak image using the quay.io/keycloak/keycloak:26.0.6 
+  + Set the environmental variables needed 
+  + Copy the MSSQL server JDBC driver to the providers directory 
+  + Run the build step in the image to optimize the image 
+  + Build the docker image using the command `docker build . -t customkeycloakimage:26.0.6` 
   
 * Manifest.yaml file
-  Create the manifest.yaml with the deployment, service, ingress for the keycloak </br>
-  Set the bootstrap admin credentials </br>
-  Update the database connection settings </br>
-  Modify the other configuration as required </br> 
-  Deploy the file running the command `kubectl apply -f manifest.yaml` </br>
+  + Create the manifest.yaml with the deployment, service, ingress for the keycloak 
+  + Set the bootstrap admin credentials 
+  + Update the database connection settings 
+  + Modify the other configuration as required 
+  + Deploy the file running the command `kubectl apply -f manifest.yaml` 
 
 ## Verification ##
 Verify the pods running on the cluster </br>
