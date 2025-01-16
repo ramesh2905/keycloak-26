@@ -24,4 +24,5 @@
 ## Verification ##
 Verify the pods running on the cluster </br>
 Access the keycloak on http://localhost:8080/auth </br>
+Access Management console on http://localhost:9000/management </br>
 
