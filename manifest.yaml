@@ -42,11 +42,14 @@ spec:
         - name: KC_HOSTNAME_STRICT
           value: "false"
         - name: KC_DB_URL
-          value: "jdbc:sqlserver://127.0.0.1;databaseName=keycloak;sendStringParametersAsUnicode=false"
+          value: "jdbc:sqlserver://1x.x.x.x;databaseName=keycloak;integratedsecurity=true;trustServerCertificate=true;sendStringParametersAsUnicode=false"
         - name: KC_DB_USERNAME
           value: "keycloak"
         - name: KC_DB_PASSWORD
-          value: "changeme"
+          valueFrom:
+            secretKeyRef:
+              name: mssql-secret
+              key: MSSQL_SA_PASSWORD
         - name: KC_DB_URL_PORT
           value: "1433"
         - name: CACHE_OWNERS_COUNT

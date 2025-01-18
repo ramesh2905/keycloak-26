@@ -6,7 +6,13 @@
 * Docker 
 * Kubectl 
 
-## Installation ##
+## MSSQL database Installation ##
+ + Create a deployment file, Example: mssql.yaml 
+ + Create a secret.yaml for storing the secret 
+ + Deploy the database running the command `kubectl create -f mssql.yaml`
+ + Verify the pod and services in the namespace
+ 
+## Keycloak Installation ##
 * Dockerfile
   + Build the custom keycloak image using the quay.io/keycloak/keycloak:26.0.6 
   + Set the environmental variables needed 
